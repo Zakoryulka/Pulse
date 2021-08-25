@@ -1,0 +1,59 @@
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    &:hover {
+        color: $hover-color;
+        background-color: $hover-btn-color;
+    }
+    &:active {
+        color: $hover-color;
+        background-color: $hover-btn-color;
+    }
+    @media (max-width: 767px) {
+        width: 145px;
+        height: 25px;
+    }
+}
+
+.button--promo {
+    margin-top: 67px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    @media (max-width: 767px) {
+        margin-top: 60px;
+        width: 270px;
+        height: 45px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 45px;
+        width: 260px;
+    }
+}
+
+.button--submit {
+    margin-top: 5px;
+    width: 100%;
+    height: 55px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    @media (max-width: 575px) {
+        height: 45px;
+    }
+}
+
+.button--catalog-bye {
+    width: 131px;
+    height: 40px;
+    font-size: 14px;
+}

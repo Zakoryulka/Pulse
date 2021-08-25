@@ -1,0 +1,52 @@
+@import "base/variebles";
+
+* {
+    font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+        max-width: 755px;
+    }
+    @media (max-width: 767px) {
+        max-width: 560px;
+    }
+    @media (max-width: 575px) {
+        max-width: 310px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@import "base/animations";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/titles";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/review";
+@import "blocks/footer";
+@import "blocks/modals";
+@import "blocks/pageup";

@@ -1,0 +1,25 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    svg {
+        width: 100%;
+    }
+    path {
+        fill: $main-color;
+    }
+    &:hover {
+        path {
+            fill: $hover-btn-color;
+        }  
+    }
+    @media (max-width: 575px) {
+        bottom: 20px;
+        right: 20px;
+        width: 35px;
+        height: 35px;
+    }
+}  

@@ -1,0 +1,29 @@
+.title {
+    margin: 0;
+    text-align: center;
+    color: #0d0d0d;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media (max-width: 575px) {
+        font-size: 23px;
+        line-height: 23px;
+    }
+}
+
+.title--consultation {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    @media (max-width: 575px) {
+        text-align: center;
+        font-size: 23px;
+        line-height: 23px;
+    }
+}

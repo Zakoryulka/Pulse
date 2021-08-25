@@ -1,0 +1,140 @@
+.advantages {
+    padding: 70px 0 78px 0;
+    background-color: #F6F6F6;
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }
+}
+
+.advantages__list {
+    margin: 0;
+    margin-top: 65px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    @media (max-width: 767px) {
+        margin-top: 45px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.advantages__item {
+    position: relative;
+    text-align: center;
+    width: 250px;
+    color: #0d0d0d;
+    @media (max-width: 767px) {
+        width: 180px;
+    }
+    @media (max-width: 575px) {
+        width: 280px;
+        margin-top: 35px;
+    }
+}
+
+.advantages__item--cup::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/icons/cup-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: hartbeat 1.5s ease;
+    animation-delay: 4s;
+}
+
+.advantages__item--heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/icons/heart-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: hartbeat 1.5s ease;
+    animation-delay: 4s;
+
+}
+
+.advantages__item--shoe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/icons/shoe-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: hartbeat 1.5s ease;
+    animation-delay: 4s;
+}
+
+.advantages__title {
+    padding-top: 108px;
+    color: #0d0d0d;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    @media (max-width: 767px) {
+        padding-top: 88px;
+    }
+    @media (max-width: 575px) {
+        padding-top: 80px;
+    }
+}
+
+.advantages__title--md-xs {
+    @media (max-width: 767px) {
+        display: none;
+    } 
+    @media (max-width: 575px) {
+        display: block;
+    }
+}
+
+.advantages__title--sm {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+    }
+    @media (max-width: 575px) {
+        display: none;
+    }
+}
+
+.advantages__text {
+    margin: 0;
+    margin-top: 26px;
+    color: #0d0d0d;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+       margin-top: 18px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 12px;
+    }
+}
+
+.advantages__link-school {
+    color: #ff0000;
+    text-transform: uppercase;
+    &:hover {
+        color: $hover-color;
+    }
+    &:active {
+        color: $hover-color;
+    }
+}
